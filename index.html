@@ -70,11 +70,10 @@
             }
     
             .item-salon {
-                /* "salona servis" yazısının zaten kırmızı kalmasını sağlar */
+                /* "salona servis" kırmızı*/
                 font-weight: 600;
                 font-size: 1.1rem;
                 color: #8b0000;
-                cursor: pointer; /* Kullanıcıya tıklanabilir olduğu sinyalini verir */
             }
     
             .item-desc {
@@ -83,20 +82,17 @@
                 margin-top: 2px;
             }
     
-            /* Genel fiyat rengi (eskiden maviydi) */
             .item-price {
                 font-weight: bold;
                 font-size: 1.1rem;
-                color: #000075; /* Bu, varsayılan fiyat rengidir */
+                color: #000075; 
                 white-space: nowrap;
             }
-    
-            /* SAĞLANAN YENİ KURAL: Salona Servis Fiyatı */
+        
             .service-item .item-price {
-                color: #8b0000 !important; /* Bu kural, sadece salona servis maddesinin fiyatını kırmızı yapar */
+                color: #8b0000 !important; 
             }
     
-            /* Mevcut haliyle kalması gereken fiyatlar için extra class (isteğe bağlı) */
             .item-salon-fixed .item-price {
                 color: #000075; 
             }
@@ -189,15 +185,12 @@
                 <div class="item-price">250 TL</div>
             </div>
     
-            <!-- DEĞİŞTİRİLEN BLOK BAŞLANGICI: Salona Servis -->
             <div class="menu-item service-item"> 
                 <div class="item-name-desc">
                     <div class="item-name">Hamur(<span class="item-salon" style="cursor: default;">salona servis</span>)</div>
                 </div>
-                <!-- Bu div, yukarıdaki sınıf yardımıyla kırmızı renge boyanmıştır -->
                 <div class="item-price">50 TL</div> 
             </div>
-            <!-- DEĞİŞTİRİLEN BLOK SONU -->
     
             <!-- KATEGORİ: İçecekler-->
             <div class="category-title">İçecekler</div>
